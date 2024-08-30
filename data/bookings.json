@@ -1,0 +1,219 @@
+{
+    "Tushar Sir": {
+        "27-08-24": {
+            "11am-12pm": {
+                "status": "Available"
+            },
+            "12pm-1pm": {
+                "status": "Available"
+            },
+            "1pm-2pm": {
+                "status": "Available"
+            }
+        },
+        "28-08-24": {
+            "11am-12pm": {
+                "status": "Available"
+            },
+            "12pm-1pm": {
+                "status": "Available"
+            },
+            "1pm-2pm": {
+                "status": "Available"
+            }
+        },
+        "27-08-2024": {
+            "12pm-1pm": {
+                "status": "Booked",
+                "user": "amar",
+                "company": "cog",
+                "round": "1st",
+                "invite_link": "dfdf",
+                "unique_code": "ama20240827141655"
+            }
+        },
+        "28-08-2024": {
+            "11am-12pm": {
+                "status": "Booked",
+                "user": "lokesh",
+                "company": "nav",
+                "round": "1st",
+                "invite_link": "https://www.tutorialspoint.com/python/index.htm",
+                "unique_code": "lok20240827120306"
+            },
+            "1pm-2pm": {
+                "status": "Booked",
+                "user": "lokesh",
+                "company": "nav",
+                "round": "final",
+                "invite_link": "https://www.tutorialspoint.com/python/index.htm",
+                "unique_code": "lok20240827120419"
+            }
+        }
+    },
+    "Chandra Sir": {
+        "27-08-24": {
+            "12pm-1pm": {
+                "status": "Available"
+            },
+            "1pm-2pm": {
+                "status": "Available"
+            },
+            "2pm-3pm": {
+                "status": "Available"
+            },
+            "3pm-4pm": {
+                "status": "Available"
+            },
+            "4pm-5pm": {
+                "status": "Available"
+            },
+            "5pm-6pm": {
+                "status": "Available"
+            },
+            "6pm-7pm": {
+                "status": "Available"
+            }
+        },
+        "28-08-24": {
+            "12pm-1pm": {
+                "status": "Available"
+            },
+            "1pm-2pm": {
+                "status": "Available"
+            },
+            "2pm-3pm": {
+                "status": "Available"
+            },
+            "3pm-4pm": {
+                "status": "Available"
+            },
+            "4pm-5pm": {
+                "status": "Available"
+            },
+            "5pm-6pm": {
+                "status": "Available"
+            },
+            "6pm-7pm": {
+                "status": "Available"
+            }
+        },
+        "27-08-2024": {},
+        "2024-08-28": {
+            "12pm-1pm": {
+                "user_name": "ashish",
+                "technology": "PAT",
+                "company_name": "jjj",
+                "round": "1st",
+                "unique_code": "ashish_2024-08-28_12pm-1pm"
+            }
+        },
+        "2024-08-27": {},
+        "28-08-2024": {},
+        "29-08-2024": {
+            "12pm-1pm": {
+                "status": "Booked",
+                "user": "ashish",
+                "company": "pawan",
+                "round": "1st",
+                "invite_link": "https://www.tutorialspoint.com/python/index.htm",
+                "unique_code": "ash20240829092655"
+            },
+            "1pm-2pm": {
+                "status": "Booked",
+                "user": "lokesh",
+                "company": "bv",
+                "round": "2nd",
+                "invite_link": "https://www.tutorialspoint.com/python/index.htm",
+                "unique_code": "lok20240829101520"
+            },
+            "2pm-3pm": {
+                "status": "Booked",
+                "user": "abhijeet",
+                "company": "pau",
+                "round": "1st",
+                "invite_link": "bb",
+                "unique_code": "abh20240829114218"
+            },
+            "3pm-4pm": {
+                "status": "Booked",
+                "user": "lokesh",
+                "company": "kapital",
+                "round": "1st",
+                "invite_link": "https://meet.google.com/dhs-semo-aav",
+                "unique_code": "lok20240829121653"
+            },
+            "4pm-5pm": {
+                "status": "Booked",
+                "user": "dipali",
+                "company": "fdf",
+                "round": "1st",
+                "invite_link": "(//a[@class='wjcEIp'])[2]",
+                "unique_code": "dip20240829143754"
+            },
+            "5pm-6pm": {
+                "status": "Booked",
+                "user": "lokesh",
+                "company": "bv",
+                "round": "1st",
+                "invite_link": "https://www.tutorialspoint.com/python/index.htm",
+                "unique_code": "lok20240829185840"
+            }
+        },
+        "30-08-2024": {
+            "1pm-2pm": {
+                "status": "Booked",
+                "user": "thank_lok",
+                "company": "ABCd",
+                "round": "2nd",
+                "invite_link": "https://www.tutorialspoint.com/python/index.htm",
+                "unique_code": "tha20240829114357"
+            },
+            "12pm-1pm": {
+                "user": "shivani",
+                "round": "1st",
+                "invite_link": "https://www.tutorialspoint.com/python/index.htm",
+                "unique_code": "UFWE1720",
+                "status": "Booked"
+            },
+            "2pm-3pm": {
+                "user": "utkal",
+                "round": "1st",
+                "invite_link": "dfdf",
+                "unique_code": "AY9QMLGJ",
+                "status": "Booked"
+            },
+            "3pm-4pm": {
+                "user": "Tushar",
+                "round": "1st",
+                "invite_link": "https://www.tutorialspoint.com/python/index.htm",
+                "unique_code": "CR3PBP9W",
+                "status": "Booked"
+            }
+        }
+    },
+    "Amir Sir": {
+        "27-08-24": {
+            "3pm-4pm": {
+                "status": "Available"
+            },
+            "4pm-5pm": {
+                "status": "Available"
+            },
+            "5pm-6pm": {
+                "status": "Available"
+            }
+        },
+        "28-08-24": {
+            "3pm-4pm": {
+                "status": "Available"
+            },
+            "4pm-5pm": {
+                "status": "Available"
+            },
+            "5pm-6pm": {
+                "status": "Available"
+            }
+        }
+    }
+}

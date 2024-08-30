@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Slot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <h1>Book a Slot</h1>
+    <form method="POST">
+        <label for="user_name">User Name:</label>
+        <input type="text" name="user_name" required><br>
+
+        <label for="technology">Technology:</label>
+        <select name="technology" id="technology" required>
+            <option value="">Select Technology</option>
+            <option value="PAT">PAT</option>
+            <option value="JAT">JAT</option>
+            <option value="PD">PD</option>
+        </select><br>
+
+        <label for="company_name">Company Name:</label>
+        <input type="text" name="company_name" required><br>
+
+        <label for="round_name">Round:</label>
+        <select name="round_name">
+            <option value="1st">1st</option>
+            <option value="2nd">2nd</option>
+            <option value="3rd">3rd</option>
+            <option value="final">Final</option>
+        </select><br>
+
+        <label for="mentor">Mentor:</label>
+        <select name="mentor" id="mentor" required>
+            <option value="">Select Mentor</option>
+            {% for mentor in mentors %}
+            <option value="{{ mentor }}">{{ mentor }}</option>
+            {% endfor %}
+        </select><br>
+
+        <label for="date">Date:</label>
+        <select name="date" id="date" required>
+            {% for date in dates %}
+            <option value="{{ date }}">{{ date }}</option>
+            {% endfor %}
+        </select><br>
+
+        <label for="time">Time:</label>
+        <select name="time" id="time" required>
+            <option value="">-- Select a Time Slot --</option>
+        </select><br>
+        
+        <label for="invite_link">Invite Link:</label>
+        <input type="text" name="invite_link" required><br>
+        <button type="submit">Book Slot</button>        
+        <!-- Display flash messages -->
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+            {% for message in messages %}
+                <li style="color: red;">{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+        {% endwith %}
+    </form>
+
+    <h2>Cancel Booking</h2>
+    <form method="POST" action="/cancel">
+        <label for="unique_code">Unique Code:</label>
+        <input type="text" name="unique_code" required>
+        <button type="submit">Cancel Booking</button>
+    </form>
+
+    <h2>Available Slots</h2>
+    {% for mentor in mentors %}
+    <h3>{{ mentor }}</h3>
+    <table id="booking-table">
+        <thead>
+            <tr>
+                <th>Time</th>
+                {% for date in dates %}
+                <th>{{ date }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for time in mentor_time_slots[mentor] %}
+            <tr>
+                <td>{{ time }}</td>
+                {% for date in dates %}
+                <td>
+                    {% if mentor in data and date in data[mentor] and time in data[mentor][date] %}
+                        {{ data[mentor][date][time]["user"] }} - {{ data[mentor][date][time]["round"] }}
+                    {% else %}
+                        Available
+                    {% endif %}
+                </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endfor %}
+</body>
+</html>
